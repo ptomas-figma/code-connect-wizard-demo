@@ -12,4 +12,4 @@ const SelectInput = () => {
 };
 
 
-export default SelectInput;
+export { SelectInput };

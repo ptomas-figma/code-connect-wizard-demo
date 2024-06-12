@@ -15,4 +15,4 @@ const RadioButton = ({ label, value, checked, onChange }) => {
     );
 };
 
-export default RadioButton;
+export { RadioButton };
