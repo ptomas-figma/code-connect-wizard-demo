@@ -15,19 +15,9 @@ figma.connect(
   "https://staging.figma.com/design/XHti3mZMluUwlrDrMvfToU/Wizard-Design-System?node-id=1%3A1727",
   {
     props: {
-      label: figma.boolean("👁️ Label"),
-      description: figma.boolean("👁️ Description"),
-      state: figma.enum("🐣 State", {
-        Default: "default",
-        Focused: "focused",
-      }),
-      type: figma.enum("🐣 Type", {
-        Check: "check",
-        Unchecked: "unchecked",
-        Mixed: "mixed",
-      }),
-      disabled: figma.boolean("🎛️ Disabled"),
+      label: figma.string("Label"),
+      isInvalid: figma.boolean("isInvalid"),
     },
-    example: (props) => <Checkbox />,
+    example: (props) => <Checkbox label={props.label} isInvalid={props.isInvalid} />,
   },
 )
